@@ -1,17 +1,30 @@
 .info {
   width: 83%;
   margin: 30px auto;
-  h2 {
+  .titleIcon {
     background-color: #ff6060;
     color: white;
-    font-family: "inter", sans-serif;
     padding: 12px 15px;
     border-radius: 5px;
-    letter-spacing: 0.1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h2 {
+      font-family: "inter", sans-serif;
+      letter-spacing: 0.1rem;
+    }
+    i {
+      font-size: 1.9rem;
+      padding-right: 10px;
+      cursor: pointer;
+    }
   }
   p {
-    padding: 15px;
+    font-size: 1.2rem;
+    padding: 20px 15px;
     background: rgb(246, 246, 246);
     margin-bottom: 30px;
+    border-radius: 0 0 5px 5px;
+    line-height: 1.5;
   }
 }

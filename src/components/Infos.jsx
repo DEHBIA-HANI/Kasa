@@ -1,16 +1,30 @@
-import React from "react";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-const info = ({ title, msg }) => {
+import React, { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleUp } from "@fortawesome/free-solid-svg-icons";
+const Info = ({ title, msg }) => {
+  const [isOpen, setIsOpen] = useState(false);
+  const toggleOpen = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <div className="info">
       <div className="titleIcon">
         <h2>{title}</h2>
-        <i>> {/* <FontAwesomeIcon icon="fa-solid fa-angle-up" /> */}</i>
+        <i
+          onClick={toggleOpen}
+          style={{
+            transform: isOpen ? "rotate(-180deg)" : "rotate(0deg)",
+            transition: "transform 0.4s",
+          }}
+        >
+          <FontAwesomeIcon icon={faAngleUp} />
+        </i>
       </div>
 
-      <p>{msg}</p>
+      {isOpen && <p>{msg}</p>}
     </div>
   );
 };
 
-export default info;
+export default Info;
