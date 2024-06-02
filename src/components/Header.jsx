@@ -5,28 +5,30 @@ import "../styles/components/_header.scss";
 const Header = () => {
   return (
     <div className="header">
-      <nav>
-        <img src={logo} alt="logo Kasa" />
-        <ul>
-          <li>
-            <NavLink
-              to="/"
-              className={({ isActive }) => (isActive ? "underline" : "")}
-            >
-              Accueil
-            </NavLink>
-          </li>
+      <header>
+        <nav>
+          <img src={logo} alt="logo Kasa" />
+          <ul>
+            <li>
+              <NavLink
+                to="/"
+                className={({ isActive }) => (isActive ? "underline" : "")}
+              >
+                Accueil
+              </NavLink>
+            </li>
 
-          <li>
-            <NavLink
-              to="/about"
-              className={({ isActive }) => (isActive ? "underline" : "")}
-            >
-              A Propos
-            </NavLink>
-          </li>
-        </ul>
-      </nav>
+            <li>
+              <NavLink
+                to="/about"
+                className={({ isActive }) => (isActive ? "underline" : "")}
+              >
+                A Propos
+              </NavLink>
+            </li>
+          </ul>
+        </nav>
+      </header>
     </div>
   );
 };

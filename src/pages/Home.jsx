@@ -1,15 +1,20 @@
 import React from "react";
-import Header from "../components/Header";
 import Banner from "../components/Banner";
+import Card from "../components/Card";
+import fichier from "../fichier.json";
+
 const Home = () => {
   return (
     <div>
-      <Header />
-
-      <Banner
-        img={"./image/falaise_mer.webp"}
-        title={"Chez vous, partout et ailleurs"}
-      />
+      <section>
+        <Banner
+          img={"./image/falaise_mer.webp"}
+          title={"Chez vous, partout et ailleurs"}
+        />
+      </section>
+      <main>
+        <Card fichiers={fichier} />
+      </main>
     </div>
   );
 };

@@ -1,5 +1,4 @@
 import React from "react";
-import Header from "../components/Header";
 import Banner from "../components/Banner";
 import Infos from "../components/Infos";
 
@@ -24,12 +23,16 @@ const About = () => {
   ];
   return (
     <div>
-      <Header />
-      <Banner img={"/image/montagne.webp"} />
+      <section>
+        <Banner
+          img={"/image/montagne.webp"}
+          style={{ filter: "brightness(73%) !important" }}
+        />
 
-      {infos.map((info, index) => (
-        <Infos key={index} title={info.title} msg={info.msg} />
-      ))}
+        {infos.map((info, index) => (
+          <Infos key={index} title={info.title} msg={info.msg} />
+        ))}
+      </section>
     </div>
   );
 };
