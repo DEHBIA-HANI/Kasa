@@ -1,0 +1,29 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 64px;
+  padding-bottom: 25px;
+  gap: 39px;
+  background: black;
+  color: white;
+  @media screen and (max-width: 471px) {
+    gap: 20px;
+  }
+  img {
+    height: 40px;
+    width: 126px;
+    margin: auto;
+  }
+  p {
+    font-size: 1.5rem;
+    span {
+      font-weight: 200;
+    }
+    @media screen and (max-width: 471px) {
+      width: 40%;
+      margin: auto;
+      font-size: 0.85rem;
+    }
+  }
+}

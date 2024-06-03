@@ -1,0 +1,24 @@
+@import "../settings";
+
+.error {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  align-items: center;
+  margin: 30px auto;
+  width: 70%;
+
+  h2 {
+    font-size: 9rem;
+    letter-spacing: 0.5rem;
+    color: #ff6060;
+    font-family: "Montserrat", sans-serif;
+  }
+  p {
+    color: #ff6060;
+    font-size: 1.6rem;
+  }
+  a {
+    color: black;
+  }
+}
