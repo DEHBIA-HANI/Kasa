@@ -1,0 +1,17 @@
+.tags {
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-top: 20px;
+    li {
+      background: #ff6060;
+      color: white;
+      padding: 5px 28px;
+      font-size: 0.95rem;
+      font-weight: 500;
+      border-radius: 11px;
+    }
+  }
+}

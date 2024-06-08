@@ -4,6 +4,7 @@ import About from "./pages/About";
 import Header from "./components/Header";
 import Error from "./pages/Error";
 import Footer from "./components/Footer";
+import Logement from "./pages/Logement";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="about" element={<About />} />
+          <Route path="fichiers/:id" element={<Logement />} />
           <Route path="*" element={<Error />} />
         </Routes>
         <Footer />

@@ -1,16 +1,17 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
 const Card = ({ fichiers }) => {
   return (
     <div className="gallery">
       {fichiers.map((fichier) => (
-        <div className="card" key={fichier.id}>
+        <Link to={`/fichiers/${fichier.id}`} className="card" key={fichier.id}>
           <div className="image-container">
             <img src={fichier.cover} alt={fichier.title} />
             <h3>{fichier.title}</h3>
           </div>
-        </div>
+        </Link>
       ))}
     </div>
   );

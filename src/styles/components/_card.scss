@@ -22,12 +22,13 @@
     cursor: pointer;
     @media screen and (max-width: 767px) {
       width: 100%;
-      margin: 30px 0;
     }
     .image-container {
       position: relative;
       height: 345px;
-
+      @media screen and (max-width: 767px) {
+        margin: 30px 0;
+      }
       @media screen and (max-width: 374px) {
         height: 251px;
       }

@@ -1,0 +1,15 @@
+.host {
+  display: flex;
+  gap: 5px;
+  img {
+    height: 70px;
+    width: 70px;
+    object-fit: cover;
+    border-radius: 150%;
+  }
+  h3 {
+    color: #ff6060;
+    font-size: 1.4rem;
+    font-weight: 400;
+  }
+}
