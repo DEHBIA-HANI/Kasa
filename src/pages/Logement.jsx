@@ -7,7 +7,7 @@ import Place from "../components/logements/Place";
 import Tags from "../components/logements/Tags";
 import Host from "../components/logements/Host";
 import StarRating from "../components/logements/StarRating";
-import Info from "../components/Infos";
+import Collapse from "../components/Collapse";
 
 const findLogementById = (id) => {
   return fichiers.find((fichier) => fichier.id === id);
@@ -32,17 +32,26 @@ const Logement = () => {
     <>
       <section>
         <Carrousel cover={cover} title={title} />
-        <Place title={title} location={location} />
-        <Tags tags={tags} />
-        <Host host={host} />
-        <StarRating rating={rating} />
-        <Info title="Description" msg={description} />
-        <Info
-          title="Équipement"
-          msg={equipments.map((equipment, index) => (
-            <li key={index}>{equipment}</li>
-          ))}
-        />
+        <div className="container_info">
+          <div className="part_right">
+            <Place title={title} location={location} />
+            <Tags tags={tags} />
+          </div>
+          <div className="part_left">
+            <Host host={host} />
+            <StarRating rating={rating} />
+          </div>
+        </div>
+
+        <div className="container_description">
+          <Collapse title="Description" msg={description} />
+          <Collapse
+            title="Équipement"
+            msg={equipments.map((equipment, index) => (
+              <li key={index}>{equipment}</li>
+            ))}
+          />
+        </div>
       </section>
     </>
   );

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleUp } from "@fortawesome/free-solid-svg-icons";
-const Info = ({ title, msg }) => {
+const Collapse = ({ title, msg }) => {
   const [isOpen, setIsOpen] = useState(false);
   const toggleOpen = () => {
     setIsOpen(!isOpen);
@@ -27,4 +27,4 @@ const Info = ({ title, msg }) => {
   );
 };
 
-export default Info;
+export default Collapse;

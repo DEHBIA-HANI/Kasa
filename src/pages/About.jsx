@@ -1,6 +1,6 @@
 import React from "react";
 import Banner from "../components/Banner";
-import Infos from "../components/Infos";
+import Collapse from "../components/Collapse";
 
 const About = () => {
   const infos = [
@@ -30,7 +30,7 @@ const About = () => {
         />
 
         {infos.map((info, index) => (
-          <Infos key={index} title={info.title} msg={info.msg} />
+          <Collapse key={index} title={info.title} msg={info.msg} />
         ))}
       </section>
     </div>
