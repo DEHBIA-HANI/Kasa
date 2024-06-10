@@ -1,9 +1,40 @@
 .carrousel {
+  position: relative;
   img {
-    height: 370px;
+    height: 457px;
     width: 100%;
     object-fit: cover;
     border-radius: 20px;
     margin: 10px 0 21px 0;
+  }
+  .container_next_prev_image {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .prev,
+  .next {
+    cursor: pointer;
+    font-size: 6rem;
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+  }
+  .prev {
+    margin-left: 20px;
+  }
+  .next {
+    margin-right: 20px;
+  }
+  span {
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 1.2rem;
   }
 }

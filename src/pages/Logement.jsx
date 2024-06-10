@@ -19,7 +19,7 @@ const Logement = () => {
     return <Error />;
   }
   const {
-    cover,
+    pictures,
     title,
     location,
     tags,
@@ -31,7 +31,7 @@ const Logement = () => {
   return (
     <>
       <section>
-        <Carrousel cover={cover} title={title} />
+        <Carrousel pictures={pictures} title={title} />
         <div className="container_info">
           <div className="part_right">
             <Place title={title} location={location} />
