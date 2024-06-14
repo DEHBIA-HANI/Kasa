@@ -9,7 +9,9 @@ const Card = ({ fichiers }) => {
         <Link to={`/fichiers/${fichier.id}`} className="card" key={fichier.id}>
           <div className="image-container">
             <img src={fichier.cover} alt={fichier.title} />
-            <h3>{fichier.title}</h3>
+            <div className="title">
+              <h2>{fichier.title}</h2>
+            </div>
           </div>
         </Link>
       ))}

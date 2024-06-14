@@ -1,6 +1,9 @@
 .info {
-  width: 72%;
+  width: 83%;
   margin: 30px auto;
+  @media screen and (max-width: 870px) {
+    width: 100%;
+  }
   .titleIcon {
     background-color: #ff6060;
     color: white;
@@ -9,14 +12,33 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media screen and (max-width: 560px) {
+      padding: 8px 15px;
+    }
+    @media screen and (max-width: 450px) {
+      padding: 2px 15px;
+    }
     h2 {
       font-family: "inter", sans-serif;
       letter-spacing: 0.1rem;
+    }
+    @media screen and (max-width: 560px) {
+      font-size: 0.9rem;
+      letter-spacing: normal;
+    }
+    @media screen and (max-width: 450px) {
+      font-size: 0.8rem;
     }
     i {
       font-size: 1.9rem;
       padding-right: 10px;
       cursor: pointer;
+      @media screen and (max-width: 560px) {
+        font-size: 1.8rem;
+      }
+      @media screen and (max-width: 450px) {
+        font-size: 1.7rem;
+      }
     }
   }
   p {

@@ -6,14 +6,16 @@ import fichier from "../fichier.json";
 const Home = () => {
   return (
     <div>
-      <section>
-        <Banner
-          img={"./image/falaise_mer.webp"}
-          title={"Chez vous, partout et ailleurs"}
-        />
-      </section>
       <main>
-        <Card fichiers={fichier} />
+        <section>
+          <Banner
+            img={"./image/falaise_mer.webp"}
+            title={"Chez vous, partout et ailleurs"}
+          />
+        </section>
+        <section>
+          <Card fichiers={fichier} />
+        </section>
       </main>
     </div>
   );

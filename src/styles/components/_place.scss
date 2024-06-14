@@ -5,7 +5,15 @@
     font-size: 2rem;
     letter-spacing: 0.07rem;
     padding-right: 10px;
+    @media screen and (max-width: 750px) {
+      font-size: 1.9rem;
+    }
+    @media screen and (max-width: 560px) {
+      font-size: 1.5rem;
+      width: 350px;
+    }
   }
+
   p {
     font-weight: 600;
     font-size: 1.1rem;

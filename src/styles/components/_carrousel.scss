@@ -1,11 +1,17 @@
 .carrousel {
   position: relative;
   img {
-    height: 457px;
+    height: 462px;
     width: 100%;
     object-fit: cover;
     border-radius: 20px;
     margin: 10px 0 21px 0;
+    @media screen and (max-width: 750px) {
+      height: 402px;
+    }
+    @media screen and (max-width: 560px) {
+      height: 286px;
+    }
   }
   .container_next_prev_image {
     position: absolute;
@@ -20,8 +26,10 @@
   .next {
     cursor: pointer;
     font-size: 6rem;
-    font-family: "Montserrat", sans-serif;
     color: #fff;
+    @media screen and (max-width: 560px) {
+      font-size: 3rem;
+    }
   }
   .prev {
     margin-left: 20px;

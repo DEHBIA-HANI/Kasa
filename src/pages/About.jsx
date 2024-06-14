@@ -22,18 +22,19 @@ const About = () => {
     },
   ];
   return (
-    <div>
+    <>
       <section>
         <Banner
           img={"/image/montagne.webp"}
           style={{ filter: "brightness(73%) !important" }}
         />
-
+      </section>
+      <section>
         {infos.map((info, index) => (
           <Collapse key={index} title={info.title} msg={info.msg} />
         ))}
       </section>
-    </div>
+    </>
   );
 };
 

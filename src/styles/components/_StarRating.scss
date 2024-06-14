@@ -10,5 +10,12 @@
     color: rgba(194, 188, 188, 0.844);
     font-size: 24px;
     margin-right: 8px;
+    @media screen and (max-width: 476px) {
+      font-size: 20px;
+      margin-right: 4px;
+    }
+    @media screen and (max-width: 410px) {
+      font-size: 18px;
+    }
   }
 }
