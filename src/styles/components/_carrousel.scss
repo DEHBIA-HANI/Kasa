@@ -22,20 +22,38 @@
     justify-content: space-between;
     align-items: center;
   }
-  .prev,
-  .next {
+  .prev img,
+  .next img {
     cursor: pointer;
-    font-size: 6rem;
-    color: #fff;
+    height: 7.8rem;
+    color: $white;
+    @media screen and (max-width: 800px) {
+      height: 6.5rem;
+    }
     @media screen and (max-width: 560px) {
-      font-size: 3rem;
+      height: 4.5rem;
+    }
+    @media screen and (max-width: 480px) {
+      height: 2.8rem;
     }
   }
   .prev {
-    margin-left: 20px;
+    margin-left: 10px;
+    @media screen and (max-width: 560px) {
+      margin-left: 5px;
+    }
+    @media screen and (max-width: 480px) {
+      margin-left: 0px;
+    }
   }
   .next {
-    margin-right: 20px;
+    margin-right: 10px;
+    @media screen and (max-width: 560px) {
+      margin-right: 5px;
+    }
+    @media screen and (max-width: 480px) {
+      margin-right: 0px;
+    }
   }
   span {
     position: absolute;
@@ -44,5 +62,8 @@
     transform: translateY(-50%);
     color: white;
     font-size: 1.2rem;
+    @media screen and (max-width: 560px) {
+      display: none;
+    }
   }
 }

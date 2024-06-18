@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
-import { faAngleLeft } from "@fortawesome/free-solid-svg-icons";
+import ArrowBack from "../../assets/images/arrow_back.png";
+import ArrowForward from "../../assets/images/arrow_forward.png";
 
 const Carrousel = ({ pictures, title }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -20,20 +19,22 @@ const Carrousel = ({ pictures, title }) => {
   return (
     <div className="carrousel">
       <img src={pictures[currentIndex]} alt={title} />
+      {pictures.length > 1 && (
+        <>
+          <div className="container_next_prev_image">
+            <i className="prev" onClick={prevImage}>
+              <img src={ArrowBack} alt="arrow left" />
+            </i>
 
-      <div className="container_next_prev_image">
-        <i className="prev" onClick={prevImage}>
-          {" "}
-          <FontAwesomeIcon icon={faAngleLeft} />
-        </i>
-
-        <i className="next" onClick={nextImage}>
-          <FontAwesomeIcon icon={faAngleRight} />
-        </i>
-      </div>
-      <span>
-        {currentIndex + 1}/{pictures.length}
-      </span>
+            <i className="next" onClick={nextImage}>
+              <img src={ArrowForward} alt="arrow right" />
+            </i>
+          </div>
+          <span>
+            {currentIndex + 1}/{pictures.length}
+          </span>
+        </>
+      )}
     </div>
   );
 };

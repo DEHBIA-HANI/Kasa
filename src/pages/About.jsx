@@ -24,10 +24,7 @@ const About = () => {
   return (
     <>
       <section>
-        <Banner
-          img={"/image/montagne.webp"}
-          style={{ filter: "brightness(73%) !important" }}
-        />
+        <Banner img={"/image/montagne.webp"} className="about-banner" />
       </section>
       <section>
         {infos.map((info, index) => (

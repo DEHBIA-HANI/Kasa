@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleUp } from "@fortawesome/free-solid-svg-icons";
-const Collapse = ({ title, msg }) => {
+const Collapse = ({ title, msg, className }) => {
   const [isOpen, setIsOpen] = useState(false);
   const toggleOpen = () => {
     setIsOpen(!isOpen);
@@ -9,7 +9,7 @@ const Collapse = ({ title, msg }) => {
 
   return (
     <div className="info">
-      <div className="titleIcon">
+      <div className={`titleIcon ${className}`}>
         <h2>{title}</h2>
         <i
           onClick={toggleOpen}

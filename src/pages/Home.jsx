@@ -11,6 +11,7 @@ const Home = () => {
           <Banner
             img={"./image/falaise_mer.webp"}
             title={"Chez vous, partout et ailleurs"}
+            className="home-banner"
           />
         </section>
         <section>

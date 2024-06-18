@@ -44,8 +44,13 @@ const Logement = () => {
         </div>
 
         <div className="container_description">
-          <Collapse title="Description" msg={description} />
           <Collapse
+            className="title-logement"
+            title="Description"
+            msg={description}
+          />
+          <Collapse
+            className="title-logement"
             title="Équipement"
             msg={equipments.map((equipment, index) => (
               <li key={index}>{equipment}</li>

@@ -6,6 +6,12 @@
   @media screen and (max-width: 870px) {
     padding-bottom: 0;
   }
+  @media screen and (max-width: 870px) {
+    padding-bottom: 0;
+  }
+  @media screen and (max-width: 329px) {
+    gap: 2px;
+  }
   img {
     height: 70px;
     width: 70px;
@@ -17,7 +23,7 @@
     }
   }
   h3 {
-    color: #ff6060;
+    color: $color1;
     font-size: 1.2rem;
     font-weight: 400;
     text-align: right;
