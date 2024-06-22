@@ -1,5 +1,6 @@
+@import "../settings";
 .gallery {
-  background: rgb(246, 246, 246);
+  background: $colo4;
   margin: 30px auto;
   border-radius: 20px;
   display: grid;
