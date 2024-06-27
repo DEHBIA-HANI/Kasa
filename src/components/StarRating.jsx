@@ -1,18 +1,19 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faStar } from "@fortawesome/free-solid-svg-icons";
+import starActive from "../assets/images/star-active.png";
+import starInactive from "../assets/images/star-inactive.png";
 
 const StarRating = ({ rating }) => {
   return (
     <div className="star">
       {[...Array(5)].map((_, index) => {
         return (
-          <i key={index}>
-            <FontAwesomeIcon
-              icon={faStar}
+          <span key={index}>
+            <img
+              src={index < rating ? starActive : starInactive}
+              alt=""
               style={{ color: index < rating ? "#ff6060" : "" }}
             />
-          </i>
+          </span>
         );
       })}
     </div>

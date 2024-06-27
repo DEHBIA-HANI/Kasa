@@ -6,7 +6,10 @@ const Error = () => {
     <div>
       <section className="error">
         <h2>404</h2>
-        <p>Oups! La page que vous demander n'existe pas.</p>
+        <div className="center_paragraphe">
+          <p>Oups! La page que </p>
+          <p>vous demander n'existe pas.</p>
+        </div>
         <Link to="/">Retourner sur la page d'acceuil</Link>
       </section>
     </div>

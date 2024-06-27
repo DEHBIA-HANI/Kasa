@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAngleUp } from "@fortawesome/free-solid-svg-icons";
+import arrowCollapse from "../assets/images/arrow_collapse.png";
 const Collapse = ({ title, msg, className }) => {
   const [isOpen, setIsOpen] = useState(false);
   const toggleOpen = () => {
@@ -18,7 +17,7 @@ const Collapse = ({ title, msg, className }) => {
             transition: "transform 0.4s",
           }}
         >
-          <FontAwesomeIcon icon={faAngleUp} />
+          <img src={arrowCollapse} alt=" flèche pointant vers le haut" />
         </i>
       </div>
 
